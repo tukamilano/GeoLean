@@ -13,6 +13,4 @@ class TarskiAxioms where
   euclid : ∀ t x y z u, ∃ v w, (β x u t) ∧ (β y u z) ∧ (x ≠ u) → (β x z u) ∧ (β x y w) ∧ (β v t w)
   fiveSeg: ∀ x x' y y' z z' u u', (δ x y x' y') ∧ (δ y z y' z') ∧ (δ x u x' u') ∧ (δ y u y' u') ∧ (β x y z) ∧ (β x' y' z') ∧ (x ≠ y) → (δ z u z' u')
   segConstruct : ∀ x y u v, ∃ z, (β x y z) ∧ (δ y z u v)
-  lowerD : ∃ x y z, ¬ (β x y z) ∧ ¬ (β y z x) ∧ ¬ (β z x y)
-  upperD : ∀ x y z u v, (δ x u x v) ∧ (δ z u z v) ∧ (u ≠ v) → (β x y z) ∨ (β y z x) ∨ (β z x y)
 
